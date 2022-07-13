@@ -121,7 +121,7 @@
         .hero-bg {
           background-image: url(./images/mobile-img.jpg);
         }
-        .top-wrap ul {
+        .top-wrap {
           display: none;
         }
         /* js에서 클릭할 때 필요한 class인데, 사용은 classList.add(클래스명); */
@@ -172,7 +172,7 @@
     // trigger 버튼 사용을 위해 id(class) 이름 가져오기
     // js -> 변수만드는법 (const, let.....var) 요즘은 var안씀.
     const show_btn = document.querySelector("#show i");
-    const navbar = document.querySelector("#top-wrap ul");
+    const navbar = document.querySelector("#top-wrap");
 
     // Listener는 동작,이벤트 의미, 메소드(함수)는 무조건 괄호 필요, ()->동작
     // (이벤트, 함수명)
@@ -181,8 +181,13 @@
     //const showMenu = () => {}; //이렇게 쓰는게 좋음
     const showMenu = () => {
       //화면에 보이는 동작 처리 : display:block 클래스를 가져오기
+      //잘못됐는지 확인해보려면 alert나 console 에 글자 뜨도록 해보면..ㅇㅇ
       navbar.classList.add("open"); //클래스라고 . 붙이면 안됨 & '' 필요함
     };
+
+    // const closeMenu = () => {
+    //   navbar.classList.remove("open");
+    // };
 
     show_btn.addEventListener("click", showMenu); // 메서드를 위에만듬..?ㅇㅇ
   </script>

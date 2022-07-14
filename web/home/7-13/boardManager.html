@@ -39,7 +39,7 @@
       th,
       tr,
       td {
-        height: 45px;
+        height: 55px;
         border-bottom: 1px solid #ddd;
         font-size: 13px;
       }
@@ -64,7 +64,7 @@
       .top {
         font-size: 13px;
         font-weight: bold;
-        margin-bottom: 10px;
+        margin-bottom: 15px;
       }
       .path1 {
         color: steelblue;
@@ -128,7 +128,7 @@
         margin-right: 3px;
       }
       .add-board-button {
-        background-color: rgb(37, 37, 37);
+        background-color: steelblue;
         color: white;
         padding: 7px 13px;
         border-radius: 2px;
@@ -144,7 +144,9 @@
       <table class="table-wrap">
         <thead>
           <tr>
-            <th><input type="checkbox" /></th>
+            <th>
+              <input type="checkbox" class="chkAll" onClick="selectAll()" />
+            </th>
             <th>No.</th>
             <th>Group</th>
             <th>Name</th>
@@ -155,7 +157,127 @@
         </thead>
         <tbody>
           <tr>
-            <td><input type="checkbox" /></td>
+            <td><input type="checkbox" class="chk" /></td>
+            <td>10</td>
+            <td>
+              <select class="table-gruop">
+                <option>Home > Business</option>
+              </select>
+            </td>
+            <td><a class="table-name" href="#">비즈니스 답변형 게시판</a></td>
+            <td>2022.07.11</td>
+            <td>
+              <select class="table-reply">
+                <option>yes</option>
+                <option>no</option>
+              </select>
+            </td>
+            <td>
+              <select class="table-color">
+                <option>#cccccc</option>
+                <option>white</option>
+                <option>black</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" class="chk" /></td>
+            <td>9</td>
+            <td>
+              <select class="table-gruop">
+                <option>Home > Business</option>
+              </select>
+            </td>
+            <td><a class="table-name" href="#">비즈니스 답변형 게시판</a></td>
+            <td>2022.07.11</td>
+            <td>
+              <select class="table-reply">
+                <option>yes</option>
+                <option>no</option>
+              </select>
+            </td>
+            <td>
+              <select class="table-color">
+                <option>#cccccc</option>
+                <option>white</option>
+                <option>black</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" class="chk" /></td>
+            <td>8</td>
+            <td>
+              <select class="table-gruop">
+                <option>Home > Business</option>
+              </select>
+            </td>
+            <td><a class="table-name" href="#">비즈니스 답변형 게시판</a></td>
+            <td>2022.07.11</td>
+            <td>
+              <select class="table-reply">
+                <option>yes</option>
+                <option>no</option>
+              </select>
+            </td>
+            <td>
+              <select class="table-color">
+                <option>#cccccc</option>
+                <option>white</option>
+                <option>black</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" class="chk" /></td>
+            <td>7</td>
+            <td>
+              <select class="table-gruop">
+                <option>Home > Business</option>
+              </select>
+            </td>
+            <td><a class="table-name" href="#">비즈니스 답변형 게시판</a></td>
+            <td>2022.07.11</td>
+            <td>
+              <select class="table-reply">
+                <option>yes</option>
+                <option>no</option>
+              </select>
+            </td>
+            <td>
+              <select class="table-color">
+                <option>#cccccc</option>
+                <option>white</option>
+                <option>black</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" class="chk" /></td>
+            <td>6</td>
+            <td>
+              <select class="table-gruop">
+                <option>Home > Business</option>
+              </select>
+            </td>
+            <td><a class="table-name" href="#">비즈니스 답변형 게시판</a></td>
+            <td>2022.07.11</td>
+            <td>
+              <select class="table-reply">
+                <option>yes</option>
+                <option>no</option>
+              </select>
+            </td>
+            <td>
+              <select class="table-color">
+                <option>#cccccc</option>
+                <option>white</option>
+                <option>black</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" class="chk" /></td>
             <td>5</td>
             <td>
               <select class="table-gruop">
@@ -179,7 +301,7 @@
             </td>
           </tr>
           <tr>
-            <td><input type="checkbox" /></td>
+            <td><input type="checkbox" class="chk" /></td>
             <td>4</td>
             <td>
               <select class="table-gruop">
@@ -203,7 +325,7 @@
             </td>
           </tr>
           <tr>
-            <td><input type="checkbox" /></td>
+            <td><input type="checkbox" class="chk" /></td>
             <td>3</td>
             <td>
               <select class="table-gruop">
@@ -227,7 +349,7 @@
             </td>
           </tr>
           <tr>
-            <td><input type="checkbox" /></td>
+            <td><input type="checkbox" class="chk" /></td>
             <td>2</td>
             <td>
               <select class="table-gruop">
@@ -251,7 +373,7 @@
             </td>
           </tr>
           <tr>
-            <td><input type="checkbox" /></td>
+            <td><input type="checkbox" class="chk" /></td>
             <td>1</td>
             <td>
               <select class="table-gruop">
@@ -297,5 +419,18 @@
         </div>
       </div>
     </div>
+    <script>
+      function selectAll() {
+        if (document.querySelector(".chkAll").checked) {
+          for (let i = 0; i < document.querySelector(".chk").length; i++) {
+            document.querySelector(".chk")[i].checked = true;
+          }
+        } else {
+          for (let i = 0; i < document.querySelector(".chk").length; i++) {
+            document.querySelector(".chk")[i].checked = false;
+          }
+        }
+      }
+    </script>
   </body>
 </html>

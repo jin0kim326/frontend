@@ -422,12 +422,12 @@
     <script>
       function selectAll() {
         if (document.querySelector(".chkAll").checked) {
-          for (let i = 0; i < document.querySelector(".chk").length; i++) {
-            document.querySelector(".chk")[i].checked = true;
+          for (let i = 0; i < document.querySelectorAll(".chk").length; i++) {
+            document.querySelectorAll(".chk")[i].checked = true;
           }
         } else {
-          for (let i = 0; i < document.querySelector(".chk").length; i++) {
-            document.querySelector(".chk")[i].checked = false;
+          for (let i = 0; i < document.querySelectorAll(".chk").length; i++) {
+            document.querySelectorAll(".chk")[i].checked = false;
           }
         }
       }
